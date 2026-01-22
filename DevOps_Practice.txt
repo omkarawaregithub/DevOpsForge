@@ -1,62 +1,7 @@
-  GNU nano 6.2                                                                         DevOps_Practice.txt *
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  GNU nano 6.2                                                                         DevOps_Practice.txt *
-
-
-
-
-
-
-
-
-
-
-
-
-
-============================================================
                DEVOPS FULL PRACTICE FILE
-============================================================
 
 
-------------------------------------------------------------
 1. LINUX BASICS
 ------------------------------------------------------------
 - pwd                      : Show current directory
@@ -237,9 +182,4 @@ Common CI/CD Steps:
 6. Write Terraform script for dummy AWS resource
 7. Automate using CI/CD pipeline
 8. Monitor CPU, memory, disk usage, logs
-
-============================================================
-END OF DEVOPS PRACTICE FILE
-============================================================
-
 
