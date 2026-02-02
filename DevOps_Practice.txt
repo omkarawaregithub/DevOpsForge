@@ -1,0 +1,184 @@
+
+               DEVOPS FULL PRACTICE FILE
+
+
+1. LINUX BASICS
+------------------------------------------------------------
+- pwd                      : Show current directory
+- ls                       : List files/folders
+- cd <dir>                 : Change directory
+- mkdir <dir>              : Create directory
+- touch <file>             : Create empty file
+- cp <source> <dest>       : Copy file/folder
+- mv <source> <dest>       : Move/rename file/folder
+- rm <file>                : Delete file
+- rm -rf <folder>          : Delete folder recursively
+- cat <file>               : Show file contents
+- less <file>              : View file page by page
+- echo "text" > <file>     : Write text
+- chmod 755 <file>         : Change permissions
+- chown user:group <file>  : Change ownership
+- grep "text" <file>       : Search text in file
+- find /path -name <file>  : Search for file
+- tar -czvf file.tar.gz folder/ : Compress folder
+- tar -xzvf file.tar.gz    : Extract compressed file
+- df -h                    : Disk usage
+- free -h                  : Memory usage
+- top / htop               : Process monitor
+
+
+------------------------------------------------------------
+2. SDLC (SOFTWARE DEVELOPMENT LIFE CYCLE)
+------------------------------------------------------------
+- Requirements Gathering   : Collect functional & non-functional requirements
+- Design                   : Architecture & database design
+- Implementation / Coding  : Development phase
+- Testing                  : Unit, Integration, System, Acceptance testing
+- Deployment               : Release to production
+- Maintenance              : Updates, bug fixes
+- DevOps Role              : Automate SDLC stages via CI/CD,
+                             Infrastructure as Code, Monitoring
+
+
+------------------------------------------------------------
+3. VERSION CONTROL (GIT)
+------------------------------------------------------------
+- git init                 : Initialize repository
+- git clone <repo>         : Clone repository
+- git status               : Check current status
+- git add <file>           : Stage file
+- git commit -m "message"  : Commit staged changes
+- git push -u origin master: Push to remote
+- git pull                 : Pull latest changes
+- git branch               : List branches
+- git branch <name>        : Create branch
+- git checkout <name>      : Switch branch
+- git merge <name>         : Merge branch
+- git log                  : Show commit history
+- git diff                 : Show changes
+- git remote -v            : Show remote URL
+
+
+------------------------------------------------------------
+4. CI / CD BASICS
+------------------------------------------------------------
+Jenkins:
+- Pipeline stages          : Build → Test → Deploy
+- Jenkinsfile              : Scripted or Declarative Pipeline
+
+GitHub Actions:
+- .github/workflows/<workflow>.yml
+- Automates CI/CD pipelines
+
+GitLab CI:
+- .gitlab-ci.yml           : Define stages & jobs
+
+Common CI/CD Steps:
+1. Build   (compile code)
+2. Test    (unit & integration)
+3. Package (artifact creation)
+4. Deploy  (staging/production)
+5. Monitor (logs, metrics)
+
+
+------------------------------------------------------------
+5. DOCKER BASICS
+------------------------------------------------------------
+- docker --version         : Check version
+- docker ps                : Running containers
+- docker ps -a             : All containers
+- docker images            : List images
+- docker run -it <image>   : Start container interactively
+- docker exec -it <container> bash : Access container shell
+- docker stop <container>  : Stop container
+- docker rm <container>    : Remove container
+- docker rmi <image>       : Remove image
+- docker build -t <image> .: Build image from Dockerfile
+- docker-compose up        : Start services
+- docker-compose down      : Stop services
+
+
+------------------------------------------------------------
+6. KUBERNETES BASICS
+------------------------------------------------------------
+- kubectl version          : Check version
+- kubectl cluster-info     : Cluster info
+- kubectl get nodes        : List nodes
+- kubectl get pods         : List pods
+- kubectl get svc          : List services
+- kubectl describe pod <pod> : Pod details
+- kubectl logs <pod>       : Pod logs
+- kubectl apply -f <file.yaml>  : Apply config
+- kubectl delete -f <file.yaml> : Delete resource
+- kubectl exec -it <pod> -- bash : Enter pod shell
+
+
+------------------------------------------------------------
+7. ANSIBLE BASICS
+------------------------------------------------------------
+- ansible --version        : Check version
+- ansible all -m ping -i hosts : Test connectivity
+- ansible-playbook playbook.yml : Run playbook
+- ansible-vault create secret.yml : Encrypted files
+- ansible-galaxy install <role> : Install roles
+- Inventory file           : List of hosts
+
+
+------------------------------------------------------------
+8. TERRAFORM BASICS
+------------------------------------------------------------
+- terraform init           : Initialize workspace
+- terraform plan           : Show changes
+- terraform apply          : Apply infrastructure
+- terraform destroy        : Remove infrastructure
+- terraform fmt            : Format code
+- terraform validate       : Check syntax
+- terraform state list     : Resources
+
+
+------------------------------------------------------------
+9. CLOUD BASICS (AWS)
+------------------------------------------------------------
+- aws configure             : Setup CLI
+- aws s3 ls                 : List buckets
+- aws s3 cp file s3://bucket: Upload file
+- aws ec2 describe-instances: List EC2
+- aws ec2 start-instances --instance-ids <id> : Start EC2
+- aws ec2 stop-instances --instance-ids <id>  : Stop EC2
+- aws iam list-users        : List IAM users
+
+
+------------------------------------------------------------
+10. MONITORING & LOGGING
+------------------------------------------------------------
+- top / htop               : CPU & memory monitoring
+- free -h                  : Memory usage
+- df -h                    : Disk usage
+- tail -f /var/log/syslog  : Live logs
+- journalctl -u <service>  : Service logs
+- uptime                   : Server uptime
+
+
+------------------------------------------------------------
+11. NETWORKING BASICS
+------------------------------------------------------------
+- ifconfig / ip a          : IP information
+- ping <host>              : Connectivity test
+- traceroute <host>        : Trace route
+- netstat -tulnp           : Open ports
+- curl <url>               : HTTP requests
+- ssh user@host            : Connect to server
+- scp file user@host:/path : Copy files to remote
+
+
+------------------------------------------------------------
+12. PRACTICE EXERCISES
+------------------------------------------------------------
+1. Create Linux folder structure, files, permissions
+2. Track files using Git, commit, push to GitHub
+3. Build Docker image, run container, check logs
+4. Write Kubernetes deployment YAML and apply it
+5. Write Ansible playbook to install Nginx
+6. Write Terraform script for dummy AWS resource
+7. Automate using CI/CD pipeline
+8. Monitor CPU, memory, disk usage, logs
